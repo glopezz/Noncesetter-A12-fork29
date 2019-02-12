@@ -225,13 +225,13 @@ static struct initialization addresses[] = {
     { "iPhone11,8", "16B00000-16B99999",       addresses__iphone11_8__16BXXX }, //XR-B
 	{ "iPhone11,8", "16C00000-16C99999",       addresses__iphone11_8__16CXXX }, //XR-C
     { "iPhone11,2", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XS-A
-    { "iPhone11,2", "16B00000-16B00000",       addresses__iphone11_6__16BXXX }, //XS-B
+    { "iPhone11,2", "16B00000-1699999",       addresses__iphone11_6__16BXXX }, //XS-B
 	{ "iPhone11,2", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XS-C
     { "iPhone11,4", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XSMaxChina-A
-    { "iPhone11,4", "16B00000-16B00000",       addresses__iphone11_6__16BXXX }, //XSMaxChina-B
+    { "iPhone11,4", "16B00000-16B99999",       addresses__iphone11_6__16BXXX }, //XSMaxChina-B
     { "iPhone11,4", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XSMaxChina-C
     { "iPhone11,6", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XSMax-A
-    { "iPhone11,6", "16B00000-16B00000",       addresses__iphone11_6__16BXXX }, //XSMax-B
+    { "iPhone11,6", "16B00000-16B99999",       addresses__iphone11_6__16BXXX }, //XSMax-B
     { "iPhone11,6", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XSMax-C
 	{ "iPhone10,1", "16B92",        addresses__iphone10_1__16B92  }, //X-B
     { "iPhone10,1", "16C101",       addresses__iphone10_1__16C101 }, //X-C
