@@ -252,14 +252,14 @@ static struct initialization addresses[] = {
     { "iPhone11,6", "16A00000-16A99999",       addresses__iphone11_6__16AXXX }, //XSMax-A
     { "iPhone11,6", "16B00000-16B99999",       addresses__iphone11_6__16BXXX }, //XSMax-B
     { "iPhone11,6", "16C00000-16C99999",       addresses__iphone11_6__16CXXX }, //XSMax-C
-    { "iPad8,8"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
-    { "iPad8,7"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
-    { "iPad8,6"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
-    { "iPad8,5"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro12.9-B
-    { "iPad8,4"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
-    { "iPad8,3"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
-    { "iPad8,2"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
-    { "iPad8,1"   , "16B00000-16B99999",       addresses__ipad8_8__16CXXX }, //iPadPro11-B
+    { "iPad8,8"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro12.9-B
+    { "iPad8,7"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro12.9-B
+    { "iPad8,6"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro12.9-B
+    { "iPad8,5"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro12.9-B
+    { "iPad8,4"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro11-B
+    { "iPad8,3"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro11-B
+    { "iPad8,2"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro11-B
+    { "iPad8,1"   , "16B00000-16B99999",       addresses__ipad8_8__16BXXX }, //iPadPro11-B
     { "iPhone10,1", "16B92",        	       addresses__iphone10_1__16B92  }, //X-B
     { "iPhone10,1", "16C101",       	       addresses__iphone10_1__16C101 }, //X-C
 };
